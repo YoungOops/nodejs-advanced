@@ -12,6 +12,7 @@ usersRouter.get('/me', needSignin, (req, res) => {
       data: me,
     });
   } catch (error) {
+    // eslint-disable-next-line no-undef
     console.error(error);
     return res.status(500).json({
       success: false,
