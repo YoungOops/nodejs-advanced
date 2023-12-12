@@ -1,5 +1,5 @@
-@host = http://localhost:3000/api/users
-@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY5OTg3MjMxOSwiZXhwIjoxNjk5OTE1NTE5fQ.YwbcoCvUWWgfkLmVL8mIm1MkiZxPaV_rZ-krRv5g9Js
+@host = http://localhost:3307/api/users
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcwMjM1NzAxMiwiZXhwIjoxNzAyNDAwMjEyfQ._cTTLCBckmQlJuyAIAFUZ75hJL6PZ4sWXQQHS-KpD8I
 
 ### 내 정보 조회
 GET {{host}}/me

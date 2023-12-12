@@ -1,38 +1,11 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
-}
-
-model Users {
-  userId   Int    @id @default(autoincrement()) @map("userId")
-  name     String @map("name")
-  email    String @unique @map("email")
-  password String @map("password")
-
-  createdAt DateTime @default(now()) @map("createdAt")
-  updatedAt DateTime @updatedAt @map("updatedAt")
-
-  Products Products[]
-
-  @@map("Users")
-}
-
-model Products {
-  productId   Int    @id @default(autoincrement()) @map("productId")
-  userId      Int    @unique @map("UserId")
-  title       String @map("title")
-  description String @map("description") @db.Text
-  status      String @default("FOR_SALE") @map("status")
-
-  createdAt DateTime @default(now()) @map("createdAt")
-  updatedAt DateTime @updatedAt @map("updatedAt")
-
-  Users Users? @relation(fields: [userId], references: [userId], onDelete: Cascade)
-  // ? 는 널값 들어갈 수 있다는 뜻., user 가 작성한 것 유저가 아이디 삭제하면 글도 날리는거임.
-
-  @@map("Products")
 }
