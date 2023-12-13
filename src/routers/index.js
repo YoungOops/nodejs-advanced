@@ -8,5 +8,6 @@ const apiRouter = Router();
 apiRouter.use('/auth', authRouter);
 apiRouter.use('/users', usersRouter);
 apiRouter.use('/products', productsRouter);
+//   .../api/포함한 애들
 
 export { apiRouter };

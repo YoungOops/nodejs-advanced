@@ -1,4 +1,4 @@
-@host = http://localhost:3307/api/users
+@host = http://localhost:3001/api/users
 @accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcwMjM1NzAxMiwiZXhwIjoxNzAyNDAwMjEyfQ._cTTLCBckmQlJuyAIAFUZ75hJL6PZ4sWXQQHS-KpD8I
 
 ### 내 정보 조회
